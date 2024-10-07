@@ -1,0 +1,85 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: sans-serif;
+}
+.hero{
+    width: 100%;
+    height:100vh;
+    background-image: url(image/background-1.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+
+}
+.logo{
+    width:180px;
+    cursor: pointer;
+}
+.navbar{
+    width:85%;
+    height:15%;
+    margin: auto;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+}
+button{
+    padding: 10px 25px;
+    color:#fbfcfd;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+}
+.content{
+    color:#fbfcfd;
+    position: absolute;
+    top:50%;
+    left:8%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+h1{
+    font-size: 80px;
+    margin: 10px 0 30px;
+    line-height: 80px;
+}
+.sidebar{
+    width: 240px;
+    height: 100vh;
+    background: linear-gradient(#00545d, #000729);
+    position: absolute;
+    right:-240px;
+    top:0;
+
+}
+.icon{
+    display: block;
+}
+
+.menu{
+    position: fixed;
+    top:6px;
+    right:67px;
+    width:30px;
+    cursor: pointer;
+    margin: 40px auto 0;
+}
+.social-links img{
+    width:25px;
+    /* height:40px; */
+    margin:5px auto;
+    cursor: pointer;
+}
+/* #insta{
+    border-radius: 8px;
+}
+#fb{
+    margin-top: 40px;
+}
+#tw{
+    border-radius: 5px;
+} */

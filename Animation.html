@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes and Animations</title>
+    <style>
+        .container{
+            background-color: rgb(229, 255, 0);
+        }
+        .box{
+            background-color: green;
+            width:250px;
+            height:250px;
+            text-align: center;
+            position: relative;
+            
+
+            animation-name: box1;
+            animation-duration: 2s;
+            animation-iteration-count: 3;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease-in-out;
+            animation-delay: 3s;
+            animation-direction: reverse;
+        }
+        @keyframes box1 {
+            from{
+                width:200px;
+                /* height:40px; */
+                /* border-radius: 10px; */
+            }
+
+            to{
+                width:800px;
+                /* height:200px; */
+                /* border-radius: 90px; */
+            }
+            
+        }
+
+        .sq{
+            border:3px solid green;
+            margin:15px 15px;
+            background-color: lightgreen;
+
+        }
+        h1{
+            padding:5px 15px;
+            background-color: green;
+        }
+        h1:hover{
+            animation-name: practice;
+            animation-duration: 2s;
+            animation-iteration-count: 2;
+            animation-fill-mode: forwards;
+            /* animation-direction: alternate; */
+        }
+        @keyframes practice {
+            from{
+                width:200px;
+                background-color: darkred;
+            }
+            to{
+                width:400px;
+                background-color: darkred;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            This is a box
+        </div>
+    </div>
+
+    <div class="sq"><h1>Radhe Krishna</h1></div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box and Text Shadow</title>
+    <style>
+        .container{
+            display:flex;
+        }
+        .class{
+            border:3px solid red;
+            margin:5px 5px;
+            padding:10px 15px;
+            background-color: rgb(181, 181, 19);
+            /* first '-5px' is height of x-axis, next '5px' is the length of y-axis ,next '20px' is use for blur color and next '1px' is used for spread shadow */
+            box-shadow: -5px 5px 20px 1px maroon , 5px 5px blue;
+
+            
+        }
+        h1{
+            text-shadow: 2px 2px 5px white;
+        }
+        #sec-2 h1{
+            text-shadow: 2px 1px  white;
+        }
+        #sec-3:hover{
+            background-color: aqua;
+            transition:10s;
+        }
+        .box{
+            display: flex;
+            margin-top: 50px;
+        }
+        .square{
+            height:200px;
+            width:200px;
+            background-color: red;
+            border:3px solid green;
+            
+        }
+        #box-1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="class" id="sec-1">
+            <h1>Radhe Shyam</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores molestias voluptatum ipsam sed nobis reiciendis error placeat aliquam temporibus veritatis rem excepturi eligendi, quo vel distinctio sit fugit ab culpa amet ipsum facere beatae.</p>
+        </div>
+        <div class="class" id="sec-2">
+            <h1>Om Namaha Shivay</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores molestias voluptatum ipsam sed nobis reiciendis error placeat aliquam temporibus veritatis rem excepturi eligendi, quo vel distinctio sit fugit ab culpa amet ipsum facere beatae.</p>
+        </div>
+        <div class="class" id="sec-3">
+            <h1>Radhe Krishna</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores molestias voluptatum ipsam sed nobis reiciendis error placeat aliquam temporibus veritatis rem excepturi eligendi, quo vel distinctio sit fugit ab culpa amet ipsum facere beatae.</p>
+        </div>
+        <div class="class" id="sec-4">
+            <h1>Jai siya ram</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores molestias voluptatum ipsam sed nobis reiciendis error placeat aliquam temporibus veritatis rem excepturi eligendi, quo vel distinctio sit fugit ab culpa amet ipsum facere beatae.</p>
+        </div>
+
+    </div>
+    <div class="box">
+        <div class="square" id="box-1">RADHE RADHE</div>
+        <div class="square" id="box-2">RADHE RADHE</div>
+        <div class="square" id="box-3">RADHE RADHE</div>
+        <div class="square" id="box-4">RADHE RADHE</div>
+    </div>
+    
+</body>
+</html>

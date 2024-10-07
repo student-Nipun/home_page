@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muskan Hair and Cut Sallon</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      /* font-family:'Kaushan Script', cursive; */
+      overflow-x: hidden;
+      overflow-y: hidden;
+
+    }
+
+    .text {
+      font-size: 35px;
+      display:flex;
+      align-items: center;
+      padding-left: 10px;
+      font-weight: bold;
+      color: white;
+      /* text-shadow: 3px 3px blue; */
+    }
+
+    .box {
+      
+      position: absolute;
+      top:4%;
+      left: 10%;
+      display:flex;
+    }
+    .logo{
+    width: 100px;
+    height:100px;
+    border-radius: 209px;
+    
+}
+  </style>
+
+</head>
+
+<body>
+  <section id="banner">
+    <!-- <div class="left"> -->
+      <div class="box">
+      <img src="image/barber logo.png" alt="logo" class="logo">
+      <div class="text">
+        Barber
+      </div>
+    </div>
+    
+
+    <!-- <div class="text">Barber Wala</div> -->
+     
+
+    <div class="banner-text">
+      <h1>Hair Studio</h1>
+      <p>Style Your hair Is Style Your Life</p>
+      <div class="banner-btn">
+        <a href="#"><span></span> Find Out</a>
+        <a href="#"><span></span> Read More</a>
+      </div>
+    </div>
+  </section>
+
+  <div id="sideNav">
+    <nav>
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">FEATURES</a></li>
+        <li><a href="#">SERVICES</a></li>
+        <li><a href="#">TESTIMONIALS</a></li>
+        <li><a href="#">MEET US</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div id="menuBtn">
+    <img src="image/menubar white.png" alt="menubar" id="menu">
+  </div>
+
+</body>
+
+  <script>
+    var menuBtn = document.getElementById("menuBtn")
+    var sideNav = document.getElementById("sideNav")
+    var menu = document.getElementById("menu")
+ 
+    sideNav.style.right = "-250px";
+
+    menuBtn.onclick = function(){
+      if(sideNav.style.right == "-250px"){
+        sideNav.style.right = "0";
+      }
+      else{
+        sideNav.style.right = "-250px";
+      }
+    }
+  </script>
+
+</html>

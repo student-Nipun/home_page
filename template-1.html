@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+
+<body>
+    <div class="hero">
+        <div class="navbar">
+            <img src="image/boot logo.jpeg" class="logo" alt="Company logo">
+            <button type="button">Sign up</button>
+        </div>
+        <div class="content">
+            <small>Welcome to our</small>
+            <h1>World's<br>Creative Studio</h1>
+            <button type="button">Take a tour</button>
+        </div>
+        <div class="sidebar">
+
+            <div class="social-links">
+                <img id="fb" src="image/facebook-icon-png-739 (1).png" alt="facebook link" class="icon">
+                <img id="insta" src="image/instagram-icon-955.jpg" alt="Instagram link" class="icon">
+                <img id="tw" src="image/8934.jpg" alt="Twitter link" class="icon">
+            </div>
+            <!-- <div class="useful-links">
+                <img src="image/facebook-icon-png-739 (1).png" alt="facebook link">
+                <img src="image/instagram-icon-955.jpg" alt="Instagram link">
+                <img src="image/8934.jpg" alt="Twitter link">
+            </div> -->
+
+        </div>
+        <img src="image/menubar white.png" class="menu" alt="menubar" id="bar">
+    </div>
+
+    <script>
+        bar = document.getElementsByClassName("menu");
+        sidebar = document.getElementsByClassName("sidebar");
+        sidebar.style.right = "-240px";
+
+        bar.onclick = function () {
+            if (sidebar.style.right == "-240px") {
+                sidebar.style.right = "0";
+            }
+            else {
+                sidebar.style.right = "-240px";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

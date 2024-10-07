@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            height: 110vh;
+            background-color: #c21c4f;
+            display: flex;
+            justify-content: center;
+        }
+
+        .template {
+
+            width: 70%;
+            height: 100vh;
+            margin: auto;
+            background-color: #7b2640cf;
+        }
+
+        .detail {
+            /* border:2px solid grey; */
+            height: 85vh;
+            margin: auto;
+            width: 55%;
+            padding-top: 40px;
+        }
+
+        .head {
+            /* border:3px solid black; */
+            display: inline-block;
+            font-size: 20px;
+            width: 200px;
+            padding: 5px;
+            color: white;
+
+        }
+
+        .box {
+            padding: 5px;
+            font-size: 20px;
+        }
+
+        .input {
+            margin-bottom: 12px;
+        }
+
+        .gen {
+            font-size: 20px;
+            padding: 5px;
+            /* border:3px solid white; */
+            display: inline-block;
+            color: white;
+
+        }
+
+        .check {
+            display: inline-block;
+            font-size: 20px;
+            padding: 5px;
+            color: white;
+        }
+
+        #list {
+            color: grey;
+        }
+
+        .add {
+            display: inline-block;
+        }
+
+        #button-1 {
+            font-size: 20px;
+            font-weight: 600;
+            padding: 5px 120px;
+            border-radius: 5px;
+            color: #373434;
+            border: 1px solid grey;
+            margin-top: 30px;
+            margin-left: 90px;
+        }
+
+        .oneLine {
+            position: relative;
+            top: -65px;
+        }
+        .dark{
+            text-align: center;
+            color:white;
+            font-weight: bold;
+            font-size: 50px;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <div class="container">
+            <div class="template">
+                <div class="detail">
+                    <h1 class="dark">EMPLOYEE FORM</h1>
+                    <div class="input">
+                        <div class="head">Emp ID: </div>
+                        <input type="number" id="emp_id" placeholder="Enter Employee ID" class="box">
+                    </div>
+                    <div class="input">
+                        <div class="head">First Name:</div>
+                        <input type="text" id="first_name" placeholder="Enter First name" class="box">
+                    </div>
+                    <div class="input">
+                        <div class="head">Last Name:</div>
+                        <input type="text" id="last" placeholder="Enter Last name" class="box">
+                    </div>
+                    <div class="input">
+                        <div class="head">Gender:</div>
+                        <div class="gen">Male:<input type="radio" name="mygender" id="male"> Female:<input type="radio"
+                                name="mygender" id="female"> Other:<input type="radio" name="mygender" id="other"></div>
+                    </div>
+                    <div class="input">
+                        <div class="head">Designation:</div>
+                        <select name="job-list" id="list" class="box">
+                            <option value="product-man">Production Manager</option>
+                            <option value="purchase-man">Purchase Manager</option>
+                            <option value="sales-man">Sales Manager</option>
+                            <option value="general-man">General Manager</option>
+                            <option value="supervisor">Supervisor</option>
+                            <option value="markiting-man">Markiting Manager</option>
+                            <option value="HR-man">Human Resource Manager</option>
+                        </select>
+                    </div>
+                    <div class="input">
+                        <div class="head">Phone no: </div>
+                        <input type="number" placeholder="Phone number" class="box">
+                    </div>
+
+                    <div class="input">
+                        <div class="head oneLine">Permanent Address: </div>
+                        <div class="add"> <textarea name="address" id="address" cols="33" rows="5"
+                                placeholder="Enter your address"></textarea></div>
+                    </div>
+                    <div class="input">
+                        <input type="checkbox" name="hobby">
+                        <div class="check"> Do you want to study along with job?</div>
+                    </div>
+                    <div class="button"><button type="submit" id="button-1">Submit</button></div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

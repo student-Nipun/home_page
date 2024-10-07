@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nth child selector</title>
+    <style>
+        .container{
+            width:100%;
+            float:left;
+            display: flex;
+        }
+        .container section{
+            /* width:49%; */
+            /* display:inline-block; */
+            margin-top: 30px;
+            background-color: #efefef;
+            /* height:500px; */
+            padding:20px;
+        }
+        .container section:nth-child(1){
+            background-color: firebrick;
+        }
+        .container section:nth-child(3){
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="sec-1">
+            <h1>Heading 1</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat quas quasi porro itaque voluptatem magnam obcaecati voluptatum ullam ipsa reprehenderit error officia quo aperiam sapiente provident fugiat inventore, rerum aliquam nesciunt? Placeat eum in blanditiis voluptate error est rerum, laborum vero nobis similique quaerat accusantium quis, optio eius maiores ab.</p>
+        </section>
+        <section class="sec-1">
+            <h1>Heading 2</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat quas quasi porro itaque voluptatem magnam obcaecati voluptatum ullam ipsa reprehenderit error officia quo aperiam sapiente provident fugiat inventore, rerum aliquam nesciunt? Placeat eum in blanditiis voluptate error est rerum, laborum vero nobis similique quaerat accusantium quis, optio eius maiores ab.</p>
+        </section>
+        <section class="sec-1">
+            <h1>Heading 3</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat quas quasi porro itaque voluptatem magnam obcaecati voluptatum ullam ipsa reprehenderit error officia quo aperiam sapiente provident fugiat inventore, rerum aliquam nesciunt? Placeat eum in blanditiis voluptate error est rerum, laborum vero nobis similique quaerat accusantium quis, optio eius maiores ab.</p>
+        </section>
+    </div>
+</body>
+</html>
